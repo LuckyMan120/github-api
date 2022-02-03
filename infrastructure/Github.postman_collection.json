@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "08730273-3d2f-4837-8228-cae1c98a1a4a",
+		"name": "Github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get most popular",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/github/users/popular",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"github",
+						"users",
+						"popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User / {githubId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/github/users/60945364",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"github",
+						"users",
+						"60945364"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/github/users?per_page=3&page=6&name=decree",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"github",
+						"users"
+					],
+					"query": [
+						{
+							"key": "per_page",
+							"value": "3"
+						},
+						{
+							"key": "page",
+							"value": "6"
+						},
+						{
+							"key": "name",
+							"value": "decree"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Repos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/github/users/60945364/repos?name=bpms",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"github",
+						"users",
+						"60945364",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bpms"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
